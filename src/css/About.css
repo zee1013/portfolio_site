@@ -1,0 +1,18 @@
+.about-content-wrap{
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+.profile-box{
+    display:flex;
+    flex-direction:column;
+    gap: 20px;
+}
+.profile-box h3{
+    font-size: var(--font-card-title);
+    font-weight: 300;
+}
+.profile-box h3 strong{
+    text-decoration: underline;
+    color: var(--color-main);
+}

@@ -1,17 +1,21 @@
 .hero{
+    porsition: relative;
     width: 100%;
     height: 100vh;
 }
-.hero::after{
-    content: "";
+.hero-line{
+    margin-top: 15%;
     position: absolute;
-    top: -5%;
+    /* top: 500px; */
     left: 0;
-    background: url('../src/assets/hero_img/hero_line.png') no-repeat center center;
-    background-size: contain;
     width: 100%;
-    height: 100%;
     z-index: -1;
+}
+.hero-line img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 .title_img{
     margin-top: 20%;
