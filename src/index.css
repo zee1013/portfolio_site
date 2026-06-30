@@ -1,0 +1,69 @@
+/* 폰트 연결 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@font-face {
+  font-family: 'HsBombaram30';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Thin.woff') format('woff');
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HsBombaram30';
+  src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  --color-main: rgba(21, 145, 247, 1);
+  --color-bg: rgba(14, 15, 20, 1);
+  --card-desc: 16px;
+  --font-nav: 24px;
+  --font-sectiontitle: 48px;
+  --font-desc-title: 32px;
+  --font-about_desc: 27px;
+  --font-about_desc_sub: 21px;
+  --font-button: 18px;
+  --font-card-title: 32px;
+  --font-card-date: 21px;
+}
+
+/* 전체 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul, li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+html {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  scroll-behavior: smooth;
+  color: rgba(255, 255, 255, 1);
+  background-color: var(--color-bg);
+}
+.inner{
+  width:100%;
+  max-width:1500px;
+  margin:0 auto;
+}
+button{
+  padding: 10px 15px;
+  font-size: var(--font-button);
+  border: none;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+/* 타이틀 폰트 설정 */
+h1{
+  font-size:var(--font-sectiontitle);
+  font-family: 'HsBombaram30', sans-serif;
+  font-weight: 400;
+}

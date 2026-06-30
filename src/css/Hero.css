@@ -1,0 +1,28 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+}
+.hero::after{
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: 0;
+    background: url('../src/assets/hero_img/hero_line.png') no-repeat center center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.title_img{
+    margin-top: 20%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 99;
+}
+.title_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 373∶112;
+}
