@@ -37,9 +37,9 @@ function AppProjectItem({ project, index }) {
 
         <ul className="app-project-tags">
           {tags.map((tag) => (
-            <li key={tag} className="app-project-tag">
+            <button key={tag} className="app-project-tag">
               {tag}
-            </li>
+            </button>
           ))}
         </ul>
 

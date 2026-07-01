@@ -4,6 +4,7 @@
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.05);
     margin-bottom: 5%;
+    cursor: pointer;
 }
 .project-card:hover{
     transform: scale(1.02);

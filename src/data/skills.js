@@ -27,6 +27,11 @@ export const skillIcons = {
     name: 'Octane Render',
     icon: getIconUrl('tool=octane.png'),
   },
+  vscode: {
+    id: 'vscode',
+    name: 'vscode',
+    icon: getIconUrl('tool=vscode.png'),
+  },
   html: {
     id: 'html',
     name: 'HTML',

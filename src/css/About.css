@@ -83,3 +83,8 @@
     align-items: center;
     gap:2%;
 }
+.skill-icon-item img{
+    aspect-ratio: 1/1;
+    width: 100%;
+    min-width: 50px;
+}

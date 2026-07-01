@@ -23,26 +23,21 @@
 
 /* 실제로 화면 밖까지 삐져나가는 요소.
    음수 margin-left로 왼쪽(=inner의 왼쪽 padding, 화면 끝 방향)으로 확장 */
-.app-project-images-bleed {
+/* .app-project-images-bleed {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  /* inner의 padding(60px)보다 넉넉하게 왼쪽으로 밀어서 화면 끝까지 닿게 함 */
-  margin-left: -200px;
-}
+} */
 
 .app-project-img {
   position: absolute;
   width: 60%;
-  border-radius: 30px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 /* 폰이 2장 겹칠 때: 뒤쪽 이미지 */
 .app-project-img--0 {
-  left: 0;
+  left: -20px;
   top: 20px;
 }
 
@@ -67,15 +62,13 @@
 
 .app-project-number {
   display: block;
-  font-size: 24px;
-  font-weight: 700;
-  color: #4a7dff;
+  font-size: var(--font-sectiontitle);
+  color: var(--color-main);
   margin-bottom: 8px;
 }
 
 .app-project-title {
-  font-size: 28px;
-  font-weight: 700;
+  font-size: var(--font-card-title);
   margin-bottom: 8px;
 }
 
@@ -89,14 +82,6 @@
   gap: 8px;
   margin-bottom: 16px;
 }
-
-.app-project-tag {
-  padding: 6px 14px;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
-  font-size: 13px;
-}
-
 .app-project-desc {
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.6;

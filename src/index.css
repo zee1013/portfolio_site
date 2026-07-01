@@ -16,16 +16,17 @@
 :root {
   --color-main: rgba(21, 145, 247, 1);
   --color-bg: rgba(14, 15, 20, 1);
-  --card-desc: 16px;
-  --font-nav: 24px;
-  --font-sectiontitle: 48px;
-  --font-desc-title: 32px;
-  --font-about_desc: 27px;
-  --font-about_desc_sub: 21px;
-  --font-button: 18px;
-  --font-card-title: 32px;
-  --font-card-date: 21px;
+  /* 반응형 폰트 (뷰포트 360px ~ 1440px 기준으로 부드럽게 스케일링) */
+  --font-nav: clamp(16px, 13.33px + 0.74vw, 24px);
+  --font-sectiontitle: clamp(28px, 21.33px + 1.85vw, 48px);
+  --font-desc-title: clamp(20px, 16px + 1.11vw, 32px);
+  --font-about_desc: clamp(16px, 12.33px + 1.02vw, 27px);
+  --font-about_desc_sub: clamp(14px, 11.67px + 0.65vw, 21px);
+  --font-button: clamp(14px, 12.67px + 0.37vw, 18px);
+  --font-card-title: clamp(20px, 16px + 1.11vw, 32px);
+  --font-card-date: clamp(14px, 11.67px + 0.65vw, 21px);
 }
+
 
 /* 전체 */
 * {
@@ -63,7 +64,6 @@ button{
   border-radius: 50px;
   color:#fff;
   background-color: rgba(255, 255, 255, 0.1);
-  cursor: pointer;
 }
 
 /* 타이틀 폰트 설정 */
