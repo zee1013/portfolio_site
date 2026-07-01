@@ -4,11 +4,11 @@ function Hero() {
     return (
         <section className="hero">
             <div className="hero-line">
-                <img src="../public/assets/hero_img/hero_line.png" alt="" />
+                <img src="/assets/hero_img/hero_line.png" alt="" />
             </div>
             <div className="inner">
                 <div className="title_img">
-                    <img src="../public/assets/hero_img/title.png" alt="Hero Title" />
+                    <img src="/assets/hero_img/title.png" alt="Hero Title" />
                 </div>
             </div>
         </section>
