@@ -1,0 +1,117 @@
+.project-card{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.05);
+    margin-bottom: 5%;
+}
+.project-card:hover{
+    transform: scale(1.02);
+    transition: all 0.3s;
+}
+
+/* 프로젝트 이미지 */
+.project-img{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.project-img img{
+    display: block; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 이미지 아래 전체 콘텐츠 */
+.project-desc-wrap{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 프로젝트 타이틀, 기간 */
+.project-title-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 프로젝트 명, 기간 */
+.project-title-wrap h3{
+    font-size: var(--font-card-title);
+    font-weight: 600;
+}
+.project-title-wrap p{
+    font-size: var(--font-card-date);
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* 작업 태그 */
+.project-tag{
+    padding-top: 3%;
+    display: flex;
+    gap:1%;
+}
+
+/* 프로젝트 간단 설명 */
+.project-desc{
+    padding: 5% 0;
+    width: 85%;
+    word-break: break-all;
+}
+
+/* 사용툴 + 프로젝트 링크 박스 */
+.project-info-wrap{
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+/* 사용 툴 아이콘 */
+.tool-list{
+    display: flex;
+    gap: 5px;
+}
+.tool-title{
+    padding-bottom: 10px;
+}
+.tool-item{
+    width:50px;
+    height:50px;
+}
+.tool-item img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+
+/* 프로젝트 링크 */
+.project-links{
+    /* width: 50%; */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.project-links li i{
+    padding-left: 10px;
+}
+.project-links li a{
+    transition: all 0.3s;
+}
+.project-links li a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--color-main);
+    transition: width .3s;
+}
+.project-links li a:hover{
+    color: var(--color-main);
+}
+.project-links li a:hover::after{
+    width: 100%;
+}
