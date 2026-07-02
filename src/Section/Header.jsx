@@ -1,5 +1,5 @@
 import "../css/Header.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // 네비게이션 메뉴 목록입니다. label은 화면에 보이는 글자, id는 스크롤할 섹션의 id값입니다.
 const NAV_ITEMS = [
@@ -14,6 +14,18 @@ const NAV_ITEMS = [
 function Header() {
   // 지금 클릭된(활성화된) 메뉴를 useState로 관리합니다.
   const [activeId, setActiveId] = useState("about");
+  // 스크롤을 내렸는지 여부를 useState로 관리합니다.
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // 스크롤 이벤트: 스크롤을 내리면 헤더 색을 바꿉니다.
+  useEffect(() => {
+    const handleScroll = () => {
+      const scy = document.documentElement.scrollTop;
+      setIsScrolled(scy > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleNavClick = (id) => {
     setActiveId(id);
@@ -24,7 +36,7 @@ function Header() {
   };
 
   return (
-    <header className="header">
+    <header className={isScrolled ? "header header--active" : "header"}>
       <div className="inner">
         <nav>
           <ul className="header__nav">

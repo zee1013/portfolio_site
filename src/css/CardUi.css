@@ -39,13 +39,10 @@
 }
 
 /* 프로젝트 명, 기간 */
-.project-title-wrap h3{
-    font-size: var(--font-card-title);
-    font-weight: 600;
-}
 .project-title-wrap p{
     font-size: var(--font-card-date);
     font-weight: 200;
+    word-break: break-all;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -61,7 +58,9 @@
     padding: 5% 0;
     width: 85%;
     word-break: break-all;
+    color: rgba(255, 255, 255, 0.5);
 }
+
 
 /* 사용툴 + 프로젝트 링크 박스 */
 .project-info-wrap{

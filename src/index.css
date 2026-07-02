@@ -20,7 +20,7 @@
   --font-nav: clamp(16px, 13.33px + 0.74vw, 24px);
   --font-sectiontitle: clamp(28px, 21.33px + 1.85vw, 48px);
   --font-desc-title: clamp(20px, 16px + 1.11vw, 32px);
-  --font-about_desc: clamp(16px, 12.33px + 1.02vw, 27px);
+  --font-about_desc: clamp(16px, 12.33px + 1.02vw, 24px);
   --font-about_desc_sub: clamp(14px, 11.67px + 0.65vw, 21px);
   --font-button: clamp(14px, 12.67px + 0.37vw, 18px);
   --font-card-title: clamp(20px, 16px + 1.11vw, 32px);
@@ -67,7 +67,7 @@ button{
 }
 
 /* 타이틀 폰트 설정 */
-h1{
+h1{ /* 섹션 타이틀 */
   margin-bottom: 5%;
   font-size:var(--font-sectiontitle);
   font-family: 'HsBombaram30', sans-serif;
@@ -79,4 +79,8 @@ h2{
   font-family: 'HsBombaram30', sans-serif;
   font-weight: 400;
   color:var(--color-main)
+}
+h3{ /* 카드 ui 타이틀 */
+  font-size: var(--font-card-title);
+    font-weight: 600;
 }

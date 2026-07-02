@@ -15,8 +15,7 @@ function AppProjectItem({ project, index }) {
     >
       {/* 폰 목업 이미지 (박스보다 크게 만들어서 화면 끝에서 잘리게 함) */}
       <div className="app-project-images">
-        <div className="app-project-images-bleed">
-          {images.map((img, i) => (
+        {images.map((img, i) => (
             <img
               key={i}
               src={img}
@@ -24,47 +23,57 @@ function AppProjectItem({ project, index }) {
               className={`app-project-img app-project-img--${i}`}
             />
           ))}
-        </div>
       </div>
 
       {/* 텍스트 정보 */}
-      <div className="app-project-info">
-        <span className="app-project-number">{number}</span>
-        <h3 className="app-project-title">{title}</h3>
-        <p className="app-project-period">
-          {period.start} - {period.end}
-        </p>
+      <div className="project-desc-wrap app">
+        {/* 프로젝트 명, 기간 */}
+          <span className="app-project-number">{number}</span>
+        <div className="project-title-wrap">
+          <h3>{title}</h3>
+          <p>
+            {period.start} - {period.end}
+          </p>
+        </div>
 
-        <ul className="app-project-tags">
+        {/* 작업 태그 */}
+        <ul className="project-tag">
           {tags.map((tag) => (
-            <button key={tag} className="app-project-tag">
-              {tag}
-            </button>
+            <li key={tag}>
+              <button>{tag}</button>
+            </li>
           ))}
         </ul>
 
-        <p className="app-project-desc">{description}</p>
+        {/* 프로젝트 간단 설명 */}
+        <p className="project-desc">{description}</p>
 
-        <div className="app-project-tools">
-          <p className="app-tool-title">Tool</p>
-          <ul className="app-tool-list">
-            {tools.map((tool) => (
-              <li key={tool.id} className="app-tool-item">
-                <img src={tool.icon} alt={tool.name} />
+        {/* 사용툴 + 프로젝트 링크 박스 */}
+        <div className="project-info-wrap">
+          {/* 사용 툴 아이콘 */}
+          <div className="project-tools">
+            <p className="tool-title">Tool</p>
+            <ul className="tool-list">
+              {tools.map((tool) => (
+                <li key={tool.id} className="tool-item">
+                  <img src={tool.icon} alt={tool.name} />
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* 프로젝트 링크 */}
+          <ul className="project-links">
+            {links.map((link) => (
+              <li key={link.label} className="project-link-item">
+                <a href={link.url} target="_blank" rel="noopener noreferrer">
+                  {link.label}
+                  <i className="fa-solid fa-arrow-right"></i>
+                </a>
               </li>
             ))}
           </ul>
         </div>
-
-        <ul className="app-project-links">
-          {links.map((link) => (
-            <li key={link.label} className="app-project-link-item">
-              <a href={link.url} target="_blank" rel="noopener noreferrer">
-                {link.label} →
-              </a>
-            </li>
-          ))}
-        </ul>
       </div>
     </div>
   );

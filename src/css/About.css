@@ -5,7 +5,7 @@
 .about-content-wrap {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  /* align-items: stretch; */
 }
 .about-content-wrap h2{
     padding-bottom: 5%;
@@ -37,6 +37,9 @@
     font-size: var(--font-about_desc);
     font-weight: 200;
     line-height: 1.5;
+}
+.about-middle-box i{
+    margin-right: 10px;
 }
 .middle-link p a{
     text-decoration: underline;

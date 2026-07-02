@@ -17,7 +17,7 @@ export const appProjects = [
     number: "01",
     title: "PLANTI",
     // 폰이 여러 장 겹쳐진 경우 배열로 관리 (뒤에 있는 이미지부터 순서대로)
-    images: [getAppImage("planti_mockup2.png"), getAppImage("planti_mockup1.png")],
+    images: [getAppImage("planti_mockup1.png")],
     period: {
       start: "26.05.12",
       end: "26.06.12",

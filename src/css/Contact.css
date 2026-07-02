@@ -1,0 +1,45 @@
+.contact-wrap .inner h1{
+    text-align: center;
+}
+.contact-list-box{
+    position: relative;
+}
+.contact-folder-imgbox{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    aspect-ratio: 880/667;
+}
+.contact-folder-imgbox img{
+    width: 100%;
+
+}
+.contact-list{
+    width: 50%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    font-size: var(--font-nav);
+}
+.contact-list i{
+    margin-right: 2%;
+}
+
+/* 하단 thankyou img */
+.thankyou-imgbox{
+    width: 100%;
+    position: relative;
+    top: 50px;
+    left: 45%;
+    transform: translateX(-50%);
+    aspect-ratio: 1211/288;
+}
+.thankyou-imgbox img{
+    width: 100%;
+}

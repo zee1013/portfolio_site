@@ -34,10 +34,10 @@ function About() {
               </div>
               <div className="middle-contact">
                 <h2>CONTACT</h2>
-                <p>010-7193-1251</p>
-                <p>dmswl1251@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-screen-button"></i>010-7193-1251</p>
+                <p><i class="fa-regular fa-envelope"></i>dmswl1251@gmail.com</p>
                 <div className="middle-link">
-                  <p>
+                  <p><i class="fa-brands fa-github"></i>
                     <a
                       href="https://github.com/zee1013"
                       target="_blank"
@@ -46,7 +46,7 @@ function About() {
                       github
                     </a>
                   </p>
-                  <p>
+                  <p><i class="fa-brands fa-notion"></i>
                     <a href="#">notion</a>
                   </p>
                 </div>

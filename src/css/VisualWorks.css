@@ -1,0 +1,190 @@
+.visualWorks-title {
+  text-align: center;
+}
+
+.visual-work-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.visual-work-row {
+  display: flex;
+  gap: 24px;
+}
+
+/* Finder 창 전체 박스 */
+.finder-window {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 0;
+}
+.finder-window:hover{
+  transform: scale(1.02);
+  transition: all 0.3s;
+}
+
+.finder-window--large {
+  width: 100%;
+}
+
+/* Finder 상단바 */
+.finder-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 16px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.finder-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.finder-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.finder-dot--red {
+  background-color: #ff5f57;
+}
+.finder-dot--yellow {
+  background-color: #febc2e;
+}
+.finder-dot--green {
+  background-color: #28c840;
+}
+
+.finder-filename {
+  font-size: 13px;
+  color: #999;
+}
+
+/* Finder 내용 영역 */
+.finder-content {
+  display: flex;
+  padding: 3%;
+}
+
+.finder-window--large .finder-content .project-img.visualworks-img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.finder-window--large .finder-content .project-desc-wrap {
+  width: 45%;
+}
+
+/* 작은 카드(2번째 줄)는 세로 배치 */
+.visual-work-row .finder-content {
+  flex-direction: column;
+}
+
+.visual-work-row .project-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* 설명 랩 */
+.project-desc-wrap.visual-desc-wrap {
+  justify-content: space-between;
+}
+
+/* 프로젝트 링크 */
+.project-links.visual-links {
+  justify-content: left;
+  margin-bottom: 3%;
+}
+
+/* ===================== 포스터 & 그래픽 영역 ===================== */
+
+.posterGraphic-wrap {
+  margin-top: 10%;
+  overflow-x: hidden;
+}
+
+/* title + swiper를 하나의 flex row로 묶고, 박스 전체를 화면 너비로 확장 */
+.poster-header {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  width: 100vw;
+}
+
+/* 왼쪽 타이틀: 고정 너비로 절대 찌그러들지 않게 */
+.poster-header .poster-title-wrap {
+  position: relative;
+  flex: 0 0 300px;
+}
+
+.poster-header .poster-title-wrap h1 {
+  line-height: 1;
+}
+
+.poster-header .poster-title-wrap p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* 오른쪽 Swiper 영역: 남는 공간 전부, 화면 끝까지 */
+.poster-header .poster-swiper-wrap {
+    position: relative;
+    left: 20%;
+  flex: 1 1 0%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+}
+.poster-row-tall,
+.poster-row-square {
+  width: 100%;
+  overflow: visible;
+  
+}
+
+.poster-row-tall .swiper-slide,
+.poster-row-square .swiper-slide {
+  height: auto;
+}
+.poster-row-tall .swiper-slide:hover img,
+.poster-row-square .swiper-slide:hover img{
+  transform: scale(1.1);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.poster-img--tall {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  
+}
+
+.poster-img--square {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.poster-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

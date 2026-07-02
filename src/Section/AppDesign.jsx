@@ -6,7 +6,7 @@ function AppSection() {
   return (
     <section className="app-section">
         <div className="inner">
-            <h1>APP DESIGN</h1>
+            <h1 className="appDesign-title">App Design</h1>
 
       <div className="app-project-list">
         {appProjects.map((project, index) => (
