@@ -1,4 +1,5 @@
 .hero{
+    margin-top: 0 !important;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -30,7 +31,7 @@
 /* 폴더 이미지 */
 #ani-img{
     position: absolute;
-    bottom: 30%;
+    bottom: 10%;
     right: 50%;
 }
 .folder-ani{
@@ -44,7 +45,7 @@
 /* command 키 이미지 */
 #ani-img-command{
     position: absolute;
-    bottom: 32%;
+    bottom: 12%;
     right: 35%;
 }
 .command-ani{
@@ -91,7 +92,7 @@
 }
 
 .title_img{
-    margin-top: 20%;
+    margin-top: 10%;
     width: 100%;
     height: 100%;
     object-fit: cover;

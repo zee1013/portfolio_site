@@ -10,6 +10,7 @@ import Header from "./Section/Header";
 import Hero from "./Section/Hero";
 import VisualWorks from "./Section/VisualWorks";
 import Web from "./Section/Web";
+import GoTop from "./components/GoTop";
 
 function App(){
     return(
@@ -32,6 +33,8 @@ function App(){
             <Coding/>
             {/* 콘택트 영역 */}
             <Contact/>
+            {/* gotop 버튼 */}
+            <GoTop/>
         </div>
     )
 }
