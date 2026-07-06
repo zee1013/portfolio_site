@@ -1,3 +1,57 @@
+.contact-wrap{
+    position: relative;
+    padding-top: 20%;
+}
+.contact-line{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.contact-line img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* sparkle 데코 wrap */
+.contact-sparkle-wrap{
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+.sparkle-ani{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* 우측 중간 (폴더 오른쪽) */
+#contact-sparkle-1{
+    position: absolute;
+    top: 38%;
+    right: 10%;
+    width: 4%;
+}
+
+/* 좌측 하단 (Thank you 위쪽 왼쪽) */
+#contact-sparkle-2{
+    position: absolute;
+    top: 78%;
+    left: 8%;
+    width: 4%;
+}
+#contact-sparkle-3{
+    position: absolute;
+    bottom: -4%;
+    right: 20%;
+    width: 6%;
+}
+
 .contact-wrap .inner h1{
     text-align: center;
 }
@@ -8,7 +62,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
+    width: 60%;
     aspect-ratio: 880/667;
 }
 .contact-folder-imgbox img{
@@ -26,6 +80,7 @@
     text-align: center;
     gap: 20px;
     font-size: var(--font-nav);
+    white-space: nowrap;
 }
 .contact-list i{
     margin-right: 2%;
@@ -35,7 +90,7 @@
 .thankyou-imgbox{
     width: 100%;
     position: relative;
-    top: 50px;
+    bottom: 0;
     left: 45%;
     transform: translateX(-50%);
     aspect-ratio: 1211/288;

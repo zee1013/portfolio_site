@@ -15,7 +15,7 @@ function CardUi({ project }) {
                     {/* 프로젝트 명, 기간 */}
                 <div className="project-title-wrap">
                     <h3>{title}</h3>
-                    <p>{period.start} ~ {period.end}</p>
+                    <p>{period.start} - {period.end}</p>
                 </div>
 
                 {/* 작업 태그 */}

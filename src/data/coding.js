@@ -15,8 +15,8 @@ export const coding = [
   },
   tags: ["클론코딩", "반응형"],
   description:
-    "SHUCLE 웹사이트를 클론코딩하며 실제 서비스의 레이아웃 구조를 분석하고 구현한 프로젝트입니다.",
-  tools: [skillIcons.figma, skillIcons.photoshop, skillIcons.vscode],
+    "SHUCLE 웹사이트를 클론코딩하며 실제 서비스의 레이아웃 구조를 분석하고 구현한 프로젝트이다.",
+  tools: [skillIcons.vscode],
   links: [
     { label: "Vercel", url:"https://shucle-clone.vercel.app/"}
   ], // 추가
@@ -32,9 +32,9 @@ export const coding = [
     },
     tags: ["클론코딩"],
     description:
-      "배스킨라빈스 공식 웹사이트를 분석하고 구현하며 실제 서비스의 UI 구조와 퍼블리싱 방식을 학습한 클론코딩 프로젝트입니다.",
+      "배스킨라빈스 공식 웹사이트를 분석하고 구현하며 실제 서비스의 UI 구조와 퍼블리싱 방식을 학습한 클론코딩 프로젝트이다.",
     // skills.js에 정의된 skillIcons의 id를 재사용
-    tools: [skillIcons.figma, skillIcons.photoshop, skillIcons.vscode],
+    tools: [skillIcons.vscode],
     links: [
       { label: "Vercel", url: "https://baskinrobbins-clone.vercel.app/" }
     ],

@@ -119,7 +119,7 @@
   display: flex;
   align-items: flex-start;
   position: relative;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 /* 왼쪽 타이틀: 고정 너비로 절대 찌그러들지 않게 */
@@ -133,13 +133,17 @@
 }
 
 .poster-header .poster-title-wrap p {
+    font-size: var(--font-caption);
   color: rgba(255, 255, 255, 0.5);
 }
 
 /* 오른쪽 Swiper 영역: 남는 공간 전부, 화면 끝까지 */
+.poster-header{
+  display: flex;
+  align-items: flex-start;
+  gap: 10%;
+}
 .poster-header .poster-swiper-wrap {
-    position: relative;
-    left: 20%;
   flex: 1 1 0%;
   min-width: 0;
   display: flex;
@@ -168,7 +172,7 @@
 .poster-img--tall {
   width: 100%;
   aspect-ratio: 2 / 3;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   background-color: #e5e5e5;
   

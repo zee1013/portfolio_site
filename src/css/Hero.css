@@ -2,8 +2,9 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    max-height: 1080px;
+    /* max-height: 1080px; */
 }
+/* 라인 이미지 */
 .hero-line{
     margin-top: 5%;
     position: absolute;
@@ -18,6 +19,77 @@
     display: block;
     object-fit: contain;
 }
+
+/* 애니메이션 넣을 이미지들을 감싸는 wrap (옵저버는 이 wrap 하나에만 걸림) */
+.ani-deco-wrap{
+    position: absolute;
+    inset: 0;
+    pointer-events: none; /* 클릭 방해 안 하도록 */
+}
+
+/* 폴더 이미지 */
+#ani-img{
+    position: absolute;
+    bottom: 30%;
+    right: 50%;
+}
+.folder-ani{
+    aspect-ratio: 75/67;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* command 키 이미지 */
+#ani-img-command{
+    position: absolute;
+    bottom: 32%;
+    right: 35%;
+}
+.command-ani{
+    aspect-ratio: 208/417;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* S 키 이미지 */
+#ani-img-skey{
+    position: absolute;
+    bottom: 35%;
+    right: 10%;
+    /* width: 10%; 실제 디자인에 맞춰 조정하세요 */
+}
+.skey-ani{
+    aspect-ratio: 1/1;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* sparkle 데코 위치 */
+#ani-img-sparkle{
+    position: absolute;
+    top: -8%;
+    right: 10%;
+    width: 8%; /* 실제 디자인에 맞춰 조정하세요 */
+}
+.sparkle-ani{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+#ani-img-sparkle2{
+    position: absolute;
+    bottom: 30%;
+    left: 0%;
+    width: 6%; /* 실제 디자인에 맞춰 조정하세요 */
+}
+
 .title_img{
     margin-top: 20%;
     width: 100%;

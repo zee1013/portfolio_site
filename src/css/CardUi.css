@@ -43,6 +43,7 @@
     font-size: var(--font-card-date);
     font-weight: 200;
     word-break: break-all;
+    white-space: nowrap;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -58,6 +59,7 @@
     padding: 5% 0;
     width: 85%;
     word-break: break-all;
+      font-size: var(--font-caption);
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -99,6 +101,7 @@
     padding-left: 10px;
 }
 .project-links li a{
+      font-size: var(--font-caption);
     transition: all 0.3s;
 }
 .project-links li a::after{

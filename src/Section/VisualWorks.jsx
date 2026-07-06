@@ -12,7 +12,7 @@ function VisualWorks() {
 
   return (
     <>
-      <section className="visual-works-wrap">
+      <section className="visual-works-wrap" id="visual">
         <div className="inner">
           <h1 className="visualWorks-title">Visual Works</h1>
           <div className="visual-work-list">
@@ -35,9 +35,7 @@ function VisualWorks() {
                 GRAPHIC
               </h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Convincere honeste industria sint debemus, periculis ullius
-                indoctum. Legantur disserendum
+                포토샵과 일러스트레이터를 활용해 제작한 포스터, 카드뉴스 등의 디자인이다. 제품 포스터는 직접 촬영한 이미지를 기반으로 보정, 합성, 레이아웃 작업을 진행했으며, 각 콘텐츠의 목적과 분위기에 맞게 시각적으로 구성했다.
               </p>
             </div>
 
@@ -45,7 +43,7 @@ function VisualWorks() {
               {/* 윗줄: 세로형 포스터, 오토플레이 3초 간격 */}
               <Swiper
                 modules={[Autoplay]}
-                slidesPerView={3.5}
+                slidesPerView={4}
                 spaceBetween={16}
                 loop={true}
                 autoplay={{
@@ -53,9 +51,9 @@ function VisualWorks() {
                   disableOnInteraction: false,
                 }}
                 breakpoints={{
-                  320: { slidesPerView: 1.5 },
-                  768: { slidesPerView: 2.5 },
-                  1024: { slidesPerView: 3.5 },
+                  320: { slidesPerView: 2 },
+                  768: { slidesPerView: 2 },
+                  1024: { slidesPerView: 3 },
                 }}
                 className="poster-row-tall"
               >
@@ -71,7 +69,7 @@ function VisualWorks() {
               {/* 아랫줄: 1:1 비율, 오토플레이 4.5초 간격 (윗줄과 박자 다르게) */}
               <Swiper
                 modules={[Autoplay]}
-                slidesPerView={3.5}
+                slidesPerView={4}
                 spaceBetween={16}
                 loop={true}
                 autoplay={{
@@ -79,9 +77,9 @@ function VisualWorks() {
                   disableOnInteraction: false,
                 }}
                 breakpoints={{
-                  320: { slidesPerView: 1.5 },
-                  768: { slidesPerView: 2.5 },
-                  1024: { slidesPerView: 3.5 },
+                  320: { slidesPerView: 2 },
+                  768: { slidesPerView: 2 },
+                  1024: { slidesPerView: 3 },
                 }}
                 className="poster-row-square"
               >

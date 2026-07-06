@@ -1,3 +1,58 @@
+.app-section{
+    position: relative;
+}
+.app-line{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.app-line img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* sparkle 데코 wrap */
+.app-sparkle-wrap{
+    position: absolute;
+    inset: 0;
+    pointer-events: none; /* 클릭 방해 안 하도록 */
+    z-index: 0;
+}
+.sparkle-ani{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* 우측 상단 (01번 프로젝트 옆, 큰 사이즈) */
+#app-sparkle-1{
+    position: absolute;
+    top: 8%;
+    right: 12%;
+    width: 5%;
+}
+
+/* 좌측 중간 (작은 사이즈) */
+#app-sparkle-2{
+    position: absolute;
+    top: 55%;
+    left: 8%;
+    width: 3.5%;
+}
+
+/* 좌측 하단~중앙 (중간 사이즈) */
+#app-sparkle-3{
+    position: absolute;
+    top: 82%;
+    left: 35%;
+    width: 4%;
+}
+
 .appDesign-title{
   text-align: center;
 }
@@ -21,8 +76,8 @@
   position: relative;
   flex-shrink: 0;
   width: 45%;
-  aspect-ratio: 4 / 5; /* min-height 대신 비율로 고정해서 위/아래 잘림 방지 */
-  overflow: visible; /* 안쪽 이미지가 이 박스 밖으로 튀어나가야 하므로 hidden 금지 */
+  aspect-ratio: 4 / 5;
+  overflow: visible;
 }
 
 .app-project-img {
@@ -30,15 +85,12 @@
   width: 50%;
 }
 
-/* 위쪽 이미지: 왼쪽 상단에 배치 (컨테이너 안쪽 여유를 둠) */
 .app-project-img--0 {
   left: 0;
   top: 5%;
   z-index: 1;
 }
 
-/* 짝수 번째(reversed) 항목은 이미지 박스가 오른쪽에 있으므로
-   좌우를 반대로 뒤집어서 화면 바깥쪽(오른쪽)으로 삐져나가게 함 */
 .app-project-item--reversed .app-project-img--0 {
   left: auto;
   right: 0;
@@ -49,7 +101,6 @@
   right: 40%;
 }
 
-/* 텍스트 정보 영역 */
 .project-title-wrap.app {
   flex-direction: column;
   align-items: flex-start;

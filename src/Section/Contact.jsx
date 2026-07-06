@@ -4,11 +4,28 @@ function Contact() {
     return (
         <>
         <section className="contact-wrap">
+          <div className="contact-line">
+            <img src="/assets/decoration/line-4.png" alt="" />
+          </div>
+
+          {/* 반짝이는 sparkle 데코 2개 */}
+          <div className="contact-sparkle-wrap">
+            <div className="sparkle-img" id="contact-sparkle-1">
+              <img src="/assets/decoration/sparkle-big.png" alt="" className="sparkle-ani" />
+            </div>
+            <div className="sparkle-img" id="contact-sparkle-2">
+              <img src="/assets/decoration/sparkle-big.png" alt="" className="sparkle-ani" />
+            </div>
+            <div className="sparkle-img" id="contact-sparkle-3">
+              <img src="/assets/decoration/sparkle-big.png" alt="" className="sparkle-ani" />
+            </div>
+          </div>
+
             <div className="inner">
                 <h1>Contact</h1>
                 <div className="contact-list-box">
                     <div className="contact-folder-imgbox">
-                    <img src="../../public/assets/contact/folder.png" alt="" />
+                    <img src="/assets/contact/folder.png" alt="" />
                     </div>
                     <ul className="contact-list">
                         <li><i class="fa-solid fa-mobile-screen-button"></i>010-7193-1251</li>
@@ -28,7 +45,7 @@ function Contact() {
                     </ul>
                 </div>
             <div className="thankyou-imgbox">
-                <img src="../../public/assets/contact/Thankyou.png" alt="thankyou" />
+                <img src="/assets/contact/Thankyou.png" alt="thankyou" />
             </div>
             </div>
         </section>

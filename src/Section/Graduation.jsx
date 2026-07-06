@@ -5,7 +5,7 @@ import "../css/Graduation.css"
 function Graduation() {
     return (
         <>
-        <section className="graduation-wrap">
+        <section className="graduation-wrap" id="exhibition">
             <div className="inner">
                 <h1>Graduation Project</h1>
                 <div className="project-wrap">

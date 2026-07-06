@@ -4,7 +4,7 @@ import "../css/About.css";
 function About() {
   return (
     <>
-      <section className="about">
+      <section className="about" id="about">
         <div className="inner">
           <div className="about-title">
             <h1>About Me</h1>
@@ -12,7 +12,9 @@ function About() {
           <div className="about-content-wrap">
             {/* 왼쪽 프로필 박스 */}
             <div className="profile-box">
+              <div className="profile-img">
                <img src="/assets/about/profile.png" alt="Profile" />
+              </div>
               <h3>
                 관찰을 통해 문제를 <strong>발견</strong>하고,
                 <br />
@@ -25,7 +27,7 @@ function About() {
             {/* 중간 개인정보 박스 */}
             <div className="about-middle-box">
               <div className="middle-profile">
-                <h2>PROFILE</h2>
+                <h2>Profile</h2>
                 <p>
                   배은지
                   <br />
@@ -33,7 +35,7 @@ function About() {
                 </p>
               </div>
               <div className="middle-contact">
-                <h2>CONTACT</h2>
+                <h2>Contact</h2>
                 <p><i class="fa-solid fa-mobile-screen-button"></i>010-7193-1251</p>
                 <p><i class="fa-regular fa-envelope"></i>dmswl1251@gmail.com</p>
                 <div className="middle-link">
@@ -56,7 +58,7 @@ function About() {
             {/* 오른쪽 학력/자격증 박스 */}
             <div className="about-right-box">
               <div className="right-education">
-                <h2>EDUCATION</h2>
+                <h2>Education</h2>
                 <ul className="education-list">
                   <li>
                     <p>
@@ -77,7 +79,7 @@ function About() {
                 </ul>
               </div>
               <div className="right-license">
-                <h2>LICENSE</h2>
+                <h2>License</h2>
                 <ul className="license-list">
                   <li>
                     <p>GTQ(그래픽기술자격)2급</p>
@@ -92,7 +94,7 @@ function About() {
             </div>
           </div>
           <div className="about-skills">
-            <h2>SKILLS</h2>
+            <h2>Skills</h2>
             <ul className="skills">
               {skillGroups.map((group) => (
                 <li key={group.id} className="skill-group">
@@ -110,6 +112,65 @@ function About() {
                 </li>
               ))}
             </ul>
+          </div>
+          {/* AI 활용 설명 영역 */}
+          <div className="ai-tool-desc-wrap">
+            <h2>AI Workflow</h2>
+            <ul className="ai-tool-timeline">
+    <li className="ai-tool-item">
+      <div className="ai-tool-icon">
+        <img src="/assets/about/ai/chatgpt.png" alt="ChatGPT" />
+      </div>
+      <span className="ai-tool-step">ChatGPT</span>
+      <p className="ai-tool-desc">
+        아이디어 구성
+        <br />
+        레퍼런스 생성
+         <br />
+         이미지 생성
+      </p>
+    </li>
+
+    <li className="ai-tool-item">
+      <div className="ai-tool-icon">
+        <img src="/assets/about/ai/gemini.png" alt="Gemini" />
+      </div>
+      <span className="ai-tool-step">Gemini</span>
+      <p className="ai-tool-desc">
+        콘텐츠 분석
+        <br />
+        컨셉 문구 생성
+        <br />
+        문장 다듬기
+      </p>
+    </li>
+
+    <li className="ai-tool-item">
+      <div className="ai-tool-icon">
+        <img src="/assets/about/ai/claude.png" alt="Claude" />
+      </div>
+      <span className="ai-tool-step">Claude</span>
+      <p className="ai-tool-desc">
+        코드 구조 설계
+        <br />
+        Component 구성
+        <br />
+        오류 해결(Debugging)
+      </p>
+    </li>
+
+    <li className="ai-tool-item">
+      <div className="ai-tool-icon">
+        <img src="/assets/about/ai/firefly.png" alt="Adobe Firefly" />
+      </div>
+      <span className="ai-tool-step">Adobe Firefly</span>
+      <p className="ai-tool-desc">
+        다양한 AI 모델 활용
+        <br />
+        이미지 및 영상 제작
+      </p>
+    </li>
+  </ul>
           </div>
         </div>
       </section>

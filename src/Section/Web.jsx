@@ -4,7 +4,10 @@ import "../css/Web.css";
 
 function Web() {
   return <>
-  <section className="web">
+  <section className="web" id="web">
+    <div className="web-line">
+      <img src="/public/assets/decoration/line-2.png" alt="" />
+    </div>
     <div className="inner">
         <h1>Web Design & Publishing</h1>
         <div className="project-wrap">

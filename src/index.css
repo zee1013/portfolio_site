@@ -16,6 +16,8 @@
 :root {
   --color-main: rgba(21, 145, 247, 1);
   --color-bg: rgba(14, 15, 20, 1);
+  --color-desc: rgb(215, 222, 232);
+  
   /* 반응형 폰트 (뷰포트 360px ~ 1440px 기준으로 부드럽게 스케일링) */
   --font-nav: clamp(16px, 13.33px + 0.74vw, 24px);
   --font-sectiontitle: clamp(28px, 21.33px + 1.85vw, 48px);
@@ -25,6 +27,7 @@
   --font-button: clamp(14px, 12.67px + 0.37vw, 18px);
   --font-card-title: clamp(20px, 16px + 1.11vw, 32px);
   --font-card-date: clamp(14px, 11.67px + 0.65vw, 21px);
+  --font-caption: clamp(12px, 10.67px + 0.37vw, 16px);
 }
 
 
@@ -33,6 +36,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 ul, li{
   list-style: none;
@@ -45,7 +50,7 @@ a{
 html {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   scroll-behavior: smooth;
-  color: rgba(255, 255, 255, 1);
+  color: rgb(242, 246, 250);
   background-color: var(--color-bg);
 }
 .inner{

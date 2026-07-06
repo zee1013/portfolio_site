@@ -1,0 +1,256 @@
+@media (max-width: 1300px){
+  /* 전체 영역 */
+  .inner{
+    width: 95%;
+  }
+
+  /* 히어로 영역 */
+  #ani-img{
+    right: 60% !important;
+  }
+  #ani-img-command{
+    right: 40% !important;
+  }
+
+  /* about 영역 */
+  .about-content-wrap{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr!important;
+    row-gap: 60px !important;
+    gap: 5%;
+  }
+
+  /* 프로필 박스 */
+  .profile-box{
+    grid-column: auto;
+    flex-direction: unset !important;
+    align-items: flex-start;
+    text-align: left;
+    gap: 24px;
+  }
+  .profile-box h3{
+    display: none;
+  }
+  .profile-img{
+    width: 100% !important;
+    max-width: 300px;
+    flex-shrink: 0;
+  }
+
+  /* 중앙 프로필 박스 */
+  .about-middle-box{
+    gap: 10% !important;
+  }
+
+  /* 학력/ 자격증 박스 */
+  .about-right-box{
+    grid-column: 1/ -1;
+    /* flex-direction: unset !important; */
+    justify-content: flex-start !important;
+    gap: 5% !important;
+  }
+  .about-right-box li{
+    word-break: break-all !important;
+    width: 80%;
+  }
+  .about-right-box li br{
+    display: none;
+  }
+  .license-list li{
+    display: block !important;
+  }
+
+  /* 스킬 */
+  .skills{
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 30px;
+  }
+  .skill-icon-list{
+    flex-wrap: wrap;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+  .skill-icon-item{
+    max-width: 70px;
+  }
+
+  /* 포스터 & 그래픽 영역 */
+  /* .poster-header{
+    gap: 8%;
+  }
+  .poster-header .poster-title-wrap{
+    flex: 0 0 240px;
+  } */
+}
+
+@media (max-width: 768px) {
+    /* 전체 영역 */
+    section{
+      margin-top: 30% !important;
+    }
+  .inner{
+    width: 90%;
+  }
+  button{
+    padding: 6px 8px;
+  }
+
+  /* 헤더 모바일 메뉴 */
+  .header .inner{
+    display: flex !important;
+        justify-content: flex-end !important;
+        position: relative;
+    }
+    /* 햄버거 버튼 보이게 */
+    .header__toggle{
+        display: flex !important;
+    }
+    /* nav 너비 제한 해제 */
+    .header .inner nav{
+        width: 0 !important;
+    }
+    /* 메뉴를 컬럼(세로)으로, 평소엔 화면 밖에 숨김 */
+    .header__nav{
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 60px);
+        flex-direction: column;
+        justify-content: flex-start !important;
+        align-items: center;
+        gap: 0 !important;
+        background-color: var(--color-main);
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+    /* 메뉴 열렸을 때 */
+    .header__nav--open{
+        transform: translateX(0);
+    }
+    .header__nav li{
+        width: 100%;
+    }
+    .header__nav a{
+        padding: 20px 0;
+        font-size: var(--font-nav);
+    }
+
+    /* 반응형: 모바일에서는 세로 배치 */
+  .ai-tool-timeline {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    /* flex-direction: column; */
+    row-gap: 20px !important;
+    gap: 20px;
+  }
+  .ai-tool-item{
+    padding: 8%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  .ai-tool-timeline::before {
+    display: none;
+  }
+
+  /* 히어로 영역 */
+  .hero{
+    height: 50vh !important;
+  }
+
+  /* 웹 디자인 & 퍼블리싱 영역 */
+  .project-wrap{
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
+    gap: 0 !important;
+  }
+  /* 프로젝트 이미지 */
+  .project-img{
+    height: 250px !important;
+  }
+  /* 프로젝트 간단 설명 */
+  .project-desc{
+    width: 100% !important;
+  }
+  /* 사용툴 + 프로젝트 링크 박스 */
+  .project-info-wrap{
+    padding-bottom: 0 !important;
+    flex-direction: column;
+    align-items: flex-start !important;
+    row-gap: 20px !important;
+  }
+
+  /* 앱 디자인 영역 */
+  .app-line{
+    top: 35% !important;
+  }
+  .app-project-item, .app-project-item--reversed{
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+  .app-project-images{
+    position: relative !important;
+    width: 50% !important;
+  }
+  .app-project-img{
+    position: relative !important;
+    width: 100% !important;
+    width: 100%;
+  }
+  .app-project-img--0{
+    top: 0 !important;
+  }
+
+  /* 비주얼 워크 영역 */
+  /* 가장 윗 부분 큰 창 */
+  .finder-content{
+    flex-direction: column;
+  }
+  .finder-window--large .finder-content .project-desc-wrap{
+    width: 100% !important;
+  }
+  .finder-window--large .finder-content .project-img.visualworks-img{
+    width: 100% !important;
+  }
+  /* 아랫줄 창 */
+  .visual-work-row{
+    flex-direction: column;
+  }
+
+  /* 비주얼 워크 포스터 & 그래픽 디자인 영역 */
+  .poster-header{
+    flex-direction: column;
+    gap: 24px !important;
+  }
+  .poster-header .poster-title-wrap{
+    flex: unset !important;
+    width: 100% !important;
+  }
+  .poster-header .poster-swiper-wrap{
+    width: 100%;
+  }
+
+  /* 콘텍트 영역 */
+  .contact-folder-imgbox{
+    width: 85% !important;
+  }
+}
+
+@media (max-width:500px){
+  /* 어바웃 영역 */
+  .about-content-wrap{
+    display: grid !important;
+    grid-template-columns: 1fr!important;
+    row-gap: 20px !important;
+  }
+  .profile-box{
+    justify-content: center;
+  }
+  .profile-img{
+    width: 50% !important;
+  }
+  .middle-profile{
+    padding-bottom: 10%;
+  }
+}

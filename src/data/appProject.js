@@ -24,7 +24,7 @@ export const appProjects = [
     },
     tags: ["개인 프로젝트", "APP UI"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convincere honeste industria sint debemus, periculis ullius indoctum. Legantur disserendum consectetur adipiscing elit. Convincere honeste industria sint debemus, periculis ullius indoctum. Legantur disserendum",
+      "Planti는 사용자가 하루동안 느낀 감정과 루틴을 부담없이 기록할 수 있도록 돕는 감정 기록 앱이다. 기존 기록 서비스의 낮은 지속성과 기록 피로도 문제를 해결하고자 기획되었으며, 사용자가 자신의 감정과 일상을 자연스럽게 돌아보며 기록 습관을 형성할 수 있는 경험을 제공한다.",
     tools: [skillIcons.figma, skillIcons.illustrator],
     links: [
       { label: "Figma", url: "#" },
@@ -42,11 +42,10 @@ export const appProjects = [
     },
     tags: ["팀 프로젝트(4인)", "기획", "APP UI"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convincere honeste industria sint debemus, periculis ullius indoctum. Legantur disserendum consectetur adipiscing elit. Convincere honeste industria sint debemus, periculis ullius indoctum. Legantur disserendum",
+      "Popho 프로젝트는 스마트기기 사용자를 대상으로 사용자의 환경에 맞춰 실시간 날씨와 온도를 연동하여 기본적인 사진 촬영 기법을 알려주는 'Popho'어플리케이션 개발 프로젝트이다.",
     tools: [skillIcons.photoshop, skillIcons.illustrator],
     links: [
-      { label: "Figma", url: "#" },
-      { label: "Notion", url: "#" },
+      { label: "Notion", url: "https://app.notion.com/p/3817c519a2308079b3e9de11bdc8328c?source=copy_link" },
     ],
   },
   // 다음 앱 프로젝트 추가 시 여기에 객체 추가

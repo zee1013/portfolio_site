@@ -20,9 +20,9 @@ export const projects = [
     tools: [skillIcons.figma, skillIcons.photoshop, skillIcons.vscode],
     links: [
       { label: "기존 사이트", url: "#" },
-      { label: "프로젝트", url: "#" },
+      { label: "리디자인", url: "https://kosaf.vercel.app/" },
       { label: "Figma", url: "#" },
-      { label: "Notion", url: "#" },
+      { label: "Notion", url: "https://app.notion.com/p/3817c519a23081ec92f8ea91f4a13d7e?source=copy_link" },
     ],
   },
   {

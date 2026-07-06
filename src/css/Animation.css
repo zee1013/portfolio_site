@@ -1,0 +1,100 @@
+.folder-img,
+.command-img,
+.skey-img{
+  opacity: 0; /* 애니메이션 전엔 숨김 */
+}
+
+.folder-img.roll-in {
+  animation: rollInFolder 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 0s;
+}
+.command-img.roll-in {
+  animation: rollInCommand 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 0.25s;
+}
+.skey-img.roll-in {
+  animation: rollInSkey 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 0.5s;
+}
+
+/* 폴더: 정면 그대로 (회전 없음) */
+@keyframes rollInFolder {
+  0% {
+    transform: translateX(200px) rotate(450deg);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(-15px) rotate(-10deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* command 키: 최종 15도 기울어짐 */
+@keyframes rollInCommand {
+  0% {
+    transform: translateX(200px) rotate(450deg);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(-15px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) rotate(15deg);
+    opacity: 1;
+  }
+}
+
+/* S 키: 최종 -27도 기울어짐 */
+@keyframes rollInSkey {
+  0% {
+    transform: translateX(200px) rotate(450deg);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(-15px) rotate(-15deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) rotate(-27deg);
+    opacity: 1;
+  }
+}
+
+.sparkle-img{
+  animation: sparkleTwinkle 1.6s ease-in-out infinite;
+  transform-origin: center;
+}
+#ani-img-sparkle2{
+  animation-delay: 0.3s;
+}
+#app-sparkle-1{
+  animation-delay: 0s;
+}
+#app-sparkle-2{
+  animation-delay: 0.5s;
+}
+#app-sparkle-3{
+  animation-delay: 1s;
+}
+#contact-sparkle-1{
+  animation-delay: 0.3s;
+}
+#contact-sparkle-2{
+  animation-delay: 1.1s;
+}
+
+@keyframes sparkleTwinkle {
+  0%, 100% {
+    transform: scale(0.7);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}

@@ -28,7 +28,7 @@ function VisualWorkItem({ project }) {
           <div className="project-title-wrap">
             <h3>{title}</h3>
             <p>
-              {period.start} ~ {period.end}
+              {period.start} - {period.end}
             </p>
           </div>
 

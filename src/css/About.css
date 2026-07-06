@@ -1,6 +1,6 @@
 /* 전체 */
 .about{
-    margin-top: 0;
+    margin-top: 0 !important;
 }
 .about-content-wrap {
   display: flex;
@@ -13,9 +13,21 @@
 
 /* 왼쪽 프로필 박스 */
 .profile-box {
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+.profile-img{
+  width: 100%;
+  aspect-ratio: 51/56;
+  overflow: hidden;
+}
+.profile-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .profile-box h3 {
   font-size: var(--font-card-title);
@@ -89,5 +101,85 @@
 .skill-icon-item img{
     aspect-ratio: 1/1;
     width: 100%;
-    min-width: 50px;
+    min-width: 40px;
+    max-width: 80px;
 }
+
+/* AI 활용 설명 영역 */
+.ai-tool-desc-wrap h2{
+    margin: 10% 0;
+}
+
+.ai-tool-eyebrow {
+  display: inline-block;
+  font-size: clamp(11px, 1vw, 13px);
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.ai-tool-timeline {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* 아이콘들을 잇는 가로선 */
+.ai-tool-timeline::before {
+  content: "";
+  position: absolute;
+  top: 30px; /* 아이콘 중앙 높이에 맞춰 조정 */
+  left: 30px;
+  right: 30px;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    #3a3f4b 0,
+    #3a3f4b 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  z-index: 0;
+}
+
+.ai-tool-item {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ai-tool-icon {
+  width: clamp(48px, 5vw, 60px);
+  height: clamp(48px, 5vw, 60px);
+  border-radius: 50%;
+  background: #14161c;
+  border: 1px solid #2c3038;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.ai-tool-icon img {
+  width: 55%;
+  height: 55%;
+  object-fit: contain;
+}
+
+.ai-tool-step {
+    font-size: var(--font-about_desc);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.ai-tool-desc {
+  font-size: var(--font-caption);
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
