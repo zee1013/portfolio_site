@@ -49,7 +49,9 @@ function About() {
                     </a>
                   </p>
                   <p><i class="fa-brands fa-notion"></i>
-                    <a href="#">notion</a>
+                    <a href="https://app.notion.com/p/Portfolio-67d7c519a23083f1bdd6018d21b284db?source=copy_link"
+                    target="_blank"
+                    >notion</a>
                   </p>
                 </div>
               </div>
