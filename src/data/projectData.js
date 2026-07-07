@@ -19,9 +19,9 @@ export const projects = [
     // skills.js에 정의된 skillIcons의 id를 재사용
     tools: [skillIcons.figma, skillIcons.photoshop, skillIcons.vscode],
     links: [
-      { label: "기존 사이트", url: "#" },
+      { label: "기존 사이트", url: "https://www.kosaf.go.kr/ko/main.do" },
       { label: "리디자인", url: "https://kosaf.vercel.app/" },
-      { label: "Figma", url: "#" },
+      { label: "Figma", url: "https://www.figma.com/design/nIpOAbTlN9PWp23dgOS2Y5/1%EC%A1%B0--%EC%9D%B4%EC%83%81%EC%9C%A4--%EB%B0%B0%EC%9D%80%EC%A7%80--%EC%9D%B4%EC%95%84%EC%98%81-?node-id=33-4&t=JMOKipUJYqEP5yGN-1" },
       { label: "Notion", url: "https://app.notion.com/p/3817c519a23081ec92f8ea91f4a13d7e?source=copy_link" },
     ],
   },
@@ -40,9 +40,10 @@ export const projects = [
     // skills.js에 정의된 skillIcons의 id를 재사용
     tools: [skillIcons.figma, skillIcons.vscode],
     links: [
-      { label: "기존 사이트", url: "#" },
-      { label: "Figma", url: "#" },
-      { label: "Notion", url: "#" },
+      { label: "기존 사이트", url: "https://www.daeguphoto.com/index.php" },
+      { label: "리디자인", url: "https://biennale-web.vercel.app/" },
+      { label: "Figma", url: "https://www.figma.com/design/rGOov9xNrSYaiGByM1Vobx/daegu-photo-biennale_redesign?node-id=0-1&t=PepEug4hMJc6g8Yv-1" },
+      { label: "Notion", url: "https://app.notion.com/p/3817c519a23080c997b5ea6ef41d54f8?source=copy_link" },
     ],
   },
   {
@@ -60,8 +61,8 @@ export const projects = [
     // skills.js에 정의된 skillIcons의 id를 재사용
     tools: [skillIcons.figma, skillIcons.photoshop, skillIcons.illustrator],
     links: [
-      { label: "Figma", url: "#" },
-      { label: "Notion", url: "#" },
+      { label: "Figma", url: "https://www.figma.com/proto/rJqy5UMEqlFUIdoQXKIJQs/%EB%B0%B0%EC%9D%80%EC%A7%80_%EA%B3%A0%EB%9E%98%EC%9E%87-%ED%8E%98%EC%8A%A4%ED%83%80_%EB%9E%9C%EB%94%A9%ED%8E%98%EC%9D%B4%EC%A7%80?node-id=105-1037&viewport=-11780%2C-1068%2C1.11&t=5nv4N1h3fzhyminO-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1" },
+      { label: "Notion", url: "https://app.notion.com/p/3817c519a230805889cac0337a6defaf?source=copy_link" },
     ],
   },
   // 다음 프로젝트 추가 시 여기에 객체 추가

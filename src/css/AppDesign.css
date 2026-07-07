@@ -61,7 +61,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  /* gap: 40px; */
   margin-bottom: 15%;
   position: relative;
 }
@@ -75,14 +75,14 @@
 .app-project-images {
   position: relative;
   flex-shrink: 0;
-  width: 45%;
-  aspect-ratio: 4 / 5;
+  width: 50%;
+  aspect-ratio: 375 / 394;
   overflow: visible;
 }
 
 .app-project-img {
   position: absolute;
-  width: 50%;
+  width: 80%;
 }
 
 .app-project-img--0 {

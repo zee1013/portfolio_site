@@ -18,7 +18,8 @@ export const coding = [
     "SHUCLE 웹사이트를 클론코딩하며 실제 서비스의 레이아웃 구조를 분석하고 구현한 프로젝트이다.",
   tools: [skillIcons.vscode],
   links: [
-    { label: "Vercel", url:"https://shucle-clone.vercel.app/"}
+    { label: "Vercel", url:"https://shucle-clone.vercel.app/"},
+    { label: "Notion", url:"https://app.notion.com/p/SHUCLE-3877c519a2308013b62ff0248c223f6e?source=copy_link"}
   ], // 추가
 },
   {
@@ -36,7 +37,9 @@ export const coding = [
     // skills.js에 정의된 skillIcons의 id를 재사용
     tools: [skillIcons.vscode],
     links: [
-      { label: "Vercel", url: "https://baskinrobbins-clone.vercel.app/" }
+      { label: "Vercel", url: "https://baskinrobbins-clone.vercel.app/" },
+      { label: "Notion", url: "https://app.notion.com/p/Baskin-Robbins-3827c519a2308137be40f6c02a00e47c?source=copy_link" },
+      
     ],
   },
   // 다음 프로젝트 추가 시 여기에 객체 추가

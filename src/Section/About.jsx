@@ -161,6 +161,18 @@ function About() {
 
     <li className="ai-tool-item">
       <div className="ai-tool-icon">
+        <img src="/assets/about/ai/figma.png" alt="figma" />
+      </div>
+      <span className="ai-tool-step">Figma AI</span>
+      <p className="ai-tool-desc">
+        이미지 배경 제거
+        <br />
+        아이디어 구조화
+      </p>
+    </li>
+
+    <li className="ai-tool-item">
+      <div className="ai-tool-icon">
         <img src="/assets/about/ai/firefly.png" alt="Adobe Firefly" />
       </div>
       <span className="ai-tool-step">Adobe Firefly</span>
@@ -170,6 +182,7 @@ function About() {
         이미지 및 영상 제작
       </p>
     </li>
+    
   </ul>
           </div>
         </div>
