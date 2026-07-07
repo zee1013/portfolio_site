@@ -18,8 +18,8 @@
     background: rgba(255, 255, 255, 0.08);
 
     /* 뒤쪽 콘텐츠를 블러 + 채도 업 → 유리 뒤로 색이 스며드는 느낌 */
-    backdrop-filter: blur(6px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%); /* 사파리 대응 */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px); /* 사파리 대응 */
 
     /* 유리 하단 가장자리의 얇은 하이라이트 */
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
