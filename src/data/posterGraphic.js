@@ -29,8 +29,7 @@ export const posterTallWorks = [
 
 export const posterSquareWorks = [
   { id: "square-1", image: "/assets/poster_graphic/square/ohouse.png", alt: "오늘의집 집요한세일" },
-  { id: "square-2", image: "/assets/poster_graphic/square/square2.jpg", alt: "그래픽 2" },
-  { id: "square-3", image: "/assets/poster_graphic/square/square3.jpg", alt: "그래픽 3" },
-  { id: "square-4", image: "/assets/poster_graphic/square/square4.jpg", alt: "그래픽 4" },
-  { id: "square-5", image: "/assets/poster_graphic/square/square5.jpg", alt: "그래픽 5" },
+  { id: "square-2", image: "/assets/poster_graphic/square/megacoffee.png", alt: "메가커피 젤라또" },
+  { id: "square-3", image: "/assets/poster_graphic/square/pulmuone.png", alt: "풀무원 지구식단" },
+  { id: "square-4", image: "/assets/poster_graphic/square/kosaf.png", alt: "장학금 신청" },
 ];
