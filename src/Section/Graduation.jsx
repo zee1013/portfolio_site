@@ -7,10 +7,16 @@ function Graduation() {
         <>
         <section className="graduation-wrap" id="exhibition">
             <div className="inner">
-                <h1>Graduation Project</h1>
+                <h1 data-aos="fade-up">Graduation Project</h1>
                 <div className="project-wrap">
-                    {graduation.map((project)=>(
-                        <CardUi key={project.id} project={project}/>
+                    {graduation.map((project, index)=>(
+                        <div
+                          key={project.id}
+                          data-aos="fade-up"
+                          data-aos-delay={index * 100}
+                        >
+                          <CardUi project={project}/>
+                        </div>
                     ))}
                 </div>
             </div>

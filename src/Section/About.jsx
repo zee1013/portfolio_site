@@ -6,12 +6,12 @@ function About() {
     <>
       <section className="about" id="about">
         <div className="inner">
-          <div className="about-title">
+          <div className="about-title" data-aos="fade-up">
             <h1>About Me</h1>
           </div>
           <div className="about-content-wrap">
             {/* 왼쪽 프로필 박스 */}
-            <div className="profile-box">
+            <div className="profile-box" data-aos="fade-right">
               <div className="profile-img">
                <img src="/assets/about/profile.png" alt="Profile" />
               </div>
@@ -25,7 +25,7 @@ function About() {
             </div>
 
             {/* 중간 개인정보 박스 */}
-            <div className="about-middle-box">
+            <div className="about-middle-box" data-aos="fade-up" data-aos-delay="150">
               <div className="middle-profile">
                 <h2>Profile</h2>
                 <p>
@@ -58,7 +58,7 @@ function About() {
             </div>
 
             {/* 오른쪽 학력/자격증 박스 */}
-            <div className="about-right-box">
+            <div className="about-right-box" data-aos="fade-left" data-aos-delay="300">
               <div className="right-education">
                 <h2>Education</h2>
                 <ul className="education-list">
@@ -95,11 +95,16 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="about-skills">
+          <div className="about-skills" data-aos="fade-up">
             <h2>Skills</h2>
             <ul className="skills">
-              {skillGroups.map((group) => (
-                <li key={group.id} className="skill-group">
+              {skillGroups.map((group, index) => (
+                <li
+                  key={group.id}
+                  className="skill-group"
+                  data-aos="fade-up"
+                  data-aos-delay={index * 100}
+                >
                   <button type="button" className="skill-category-btn">
                     {group.label}
                   </button>
@@ -116,10 +121,10 @@ function About() {
             </ul>
           </div>
           {/* AI 활용 설명 영역 */}
-          <div className="ai-tool-desc-wrap">
+          <div className="ai-tool-desc-wrap" data-aos="fade-up">
             <h2>AI Workflow</h2>
             <ul className="ai-tool-timeline">
-    <li className="ai-tool-item">
+    <li className="ai-tool-item" data-aos="fade-up" data-aos-delay="0">
       <div className="ai-tool-icon">
         <img src="/assets/about/ai/chatgpt.png" alt="ChatGPT" />
       </div>
@@ -133,7 +138,7 @@ function About() {
       </p>
     </li>
 
-    <li className="ai-tool-item">
+    <li className="ai-tool-item" data-aos="fade-up" data-aos-delay="100">
       <div className="ai-tool-icon">
         <img src="/assets/about/ai/gemini.png" alt="Gemini" />
       </div>
@@ -147,7 +152,7 @@ function About() {
       </p>
     </li>
 
-    <li className="ai-tool-item">
+    <li className="ai-tool-item" data-aos="fade-up" data-aos-delay="200">
       <div className="ai-tool-icon">
         <img src="/assets/about/ai/claude.png" alt="Claude" />
       </div>
@@ -161,7 +166,7 @@ function About() {
       </p>
     </li>
 
-    <li className="ai-tool-item">
+    <li className="ai-tool-item" data-aos="fade-up" data-aos-delay="300">
       <div className="ai-tool-icon">
         <img src="/assets/about/ai/figma.png" alt="figma" />
       </div>
@@ -173,7 +178,7 @@ function About() {
       </p>
     </li>
 
-    <li className="ai-tool-item">
+    <li className="ai-tool-item" data-aos="fade-up" data-aos-delay="400">
       <div className="ai-tool-icon">
         <img src="/assets/about/ai/firefly.png" alt="Adobe Firefly" />
       </div>

@@ -34,8 +34,8 @@ function Contact() {
         </div>
 
         <div className="inner">
-          <h1>Contact</h1>
-          <div className="contact-list-box">
+          <h1 data-aos="fade-up">Contact</h1>
+          <div className="contact-list-box" data-aos="fade-up" data-aos-delay="150">
             <div className="contact-folder-imgbox">
               <img src="/assets/contact/folder.png" alt="" />
             </div>

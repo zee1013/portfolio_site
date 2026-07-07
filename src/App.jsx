@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./index.css";
 import "./App.css"
 import "../src/css/Animation.css"
@@ -13,6 +16,13 @@ import Web from "./Section/Web";
 import GoTop from "./components/GoTop";
 
 function App(){
+    useEffect(() => {
+    AOS.init({
+      duration: 800,   // 애니메이션 지속시간(ms)
+      once: true,      // 한 번만 실행 (스크롤 올려도 재실행 안 함)
+      offset: 100,     // 트리거 시작 지점 (px)
+    });
+  }, []);
     return(
         <div>
             {/* 헤더 */}

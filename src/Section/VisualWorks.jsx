@@ -14,13 +14,21 @@ function VisualWorks() {
     <>
       <section className="visual-works-wrap" id="visual">
         <div className="inner">
-          <h1 className="visualWorks-title">Visual Works</h1>
+          <h1 className="visualWorks-title" data-aos="fade-up">Visual Works</h1>
           <div className="visual-work-list">
-            <VisualWorkItem project={largeItem} />
+            <div data-aos="fade-right">
+              <VisualWorkItem project={largeItem} />
+            </div>
 
             <div className="visual-work-row">
-              {restItems.map((project) => (
-                <VisualWorkItem key={project.id} project={project} />
+              {restItems.map((project, index) => (
+                <div
+                  key={project.id}
+                  data-aos="fade-up"
+                  data-aos-delay={index * 100}
+                >
+                  <VisualWorkItem project={project} />
+                </div>
               ))}
             </div>
           </div>
@@ -29,7 +37,7 @@ function VisualWorks() {
         {/* 포스터 & 그래픽 영역 */}
         <section className="posterGraphic-wrap">
           <div className="poster-header inner">
-            <div className="poster-title-wrap">
+            <div className="poster-title-wrap" data-aos="fade-right">
               <h1>
                 POSTER &<br />
                 GRAPHIC
@@ -39,7 +47,7 @@ function VisualWorks() {
               </p>
             </div>
 
-            <div className="poster-swiper-wrap">
+            <div className="poster-swiper-wrap" data-aos="fade-left">
               {/* 윗줄: 세로형 포스터, 오토플레이 3초 간격 */}
               <Swiper
                 modules={[Autoplay]}

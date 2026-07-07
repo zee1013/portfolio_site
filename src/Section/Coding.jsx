@@ -7,10 +7,16 @@ function Coding() {
         <>
         <section className="coding-wrap" id="coding">
             <div className="inner">
-                <h1>Coding</h1>
+                <h1 data-aos="fade-up">Coding</h1>
                 <div className="project-wrap">
-                    {coding.map((project)=>(
-                        <CardUi key={project.id} project={project}/>
+                    {coding.map((project, index)=>(
+                        <div
+                          key={project.id}
+                          data-aos="fade-up"
+                          data-aos-delay={index * 100}
+                        >
+                          <CardUi project={project}/>
+                        </div>
                     ))}
                 </div>
             </div>

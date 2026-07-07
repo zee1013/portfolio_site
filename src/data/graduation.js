@@ -15,7 +15,7 @@ export const graduation = [
   },
   tags: ["순수", "촬영"],
   description:
-    "이 작업은 도시가 만든 '자연처럼 보이는 공간'을 관찰하는 시선에서 출발한다. 정돈된 나무의 배열, 산책로, 울타리, 빛과 그림자처럼 조형적인 요소를 통해 인공적으로 조성된 풍경 속 고요함과 낯섦을 기록했다.",
+    "이 작업은 도시가 만든 '자연처럼 보이는 공간'을 관찰하는 시선에서 출발한다. 조형적인 요소를 통해 인공적으로 조성된 풍경 속 고요함과 낯섦을 기록했다.",
   tools: [skillIcons.photoshop],
   links: [{ label: "Notion", url: "https://app.notion.com/p/3827c519a2308132a8d5c34f60d22a51?source=copy_link" }], // 추가
 },

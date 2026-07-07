@@ -1,14 +1,12 @@
-.project-card{
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.05);
-    margin-bottom: 5%;
-    cursor: pointer;
-}
+
 .project-card:hover{
     transform: scale(1.02);
     transition: all 0.3s;
+}
+.project-wrap{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 3%;
 }
 
 /* 프로젝트 이미지 */

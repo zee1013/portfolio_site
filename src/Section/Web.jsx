@@ -9,10 +9,16 @@ function Web() {
       <img src="/assets/decoration/line-2.png" alt="" />
     </div>
     <div className="inner">
-        <h1>Web Design & Publishing</h1>
+        <h1 data-aos="fade-up">Web Design & Publishing</h1>
         <div className="project-wrap">
-            {projects.map((project) => (
-                <CardUi key={project.id} project={project} />
+            {projects.map((project, index) => (
+                <div
+                  key={project.id}
+                  data-aos="fade-up"
+                  data-aos-delay={index * 100}
+                >
+                  <CardUi project={project} />
+                </div>
             ))}
         </div>
     </div>
