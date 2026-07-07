@@ -6,7 +6,7 @@ function AppSection() {
   return (
     <section className="app-section" id="app">
       <div className="app-line">
-        <img src="/public/assets/decoration/line-3.png" alt="" />
+        <img src="/assets/decoration/line-3.png" alt="" />
       </div>
 
       {/* 반짝이는 sparkle 데코 3개 */}
