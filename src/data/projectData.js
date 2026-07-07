@@ -37,6 +37,7 @@ export const projects = [
     tags: ["개인 프로젝트", "리디자인", "퍼블리싱", "반응형"],
     description:
       "텍스트 중심의 정보 나열 방식인 기존 사이트에서 대형 비주얼 배너와 전시 이미지를 활용하여 사용자가 첫 화면에서 전시 분위기를 직관적으로 느낄 수 있도록 개선했다.",
+    detail: "sdfsdsdf",
     // skills.js에 정의된 skillIcons의 id를 재사용
     tools: [skillIcons.figma, skillIcons.vscode],
     links: [

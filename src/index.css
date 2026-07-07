@@ -38,6 +38,7 @@
   box-sizing: border-box;
   word-break: keep-all;
   overflow-wrap: break-word;
+  cursor: none !important;
 }
 ul, li{
   list-style: none;

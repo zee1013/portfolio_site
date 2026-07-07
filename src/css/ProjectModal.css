@@ -1,0 +1,146 @@
+/* 모달 배경 오버레이 */
+.project-modal-overlay {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    padding: 5%;
+    animation: modal-fade-in 0.25s ease;
+}
+
+@keyframes modal-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* 모달 본체 */
+.project-modal {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    max-height: 85vh;
+    overflow-y: auto;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    animation: modal-pop-in 0.25s ease;
+}
+
+@keyframes modal-pop-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* 닫기 버튼 */
+.project-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.2s;
+}
+.project-modal-close:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* 상단 이미지 */
+.project-modal-img {
+    width: 100%;
+    height: 350px;
+}
+.project-modal-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 콘텐츠 영역 */
+.project-modal-body {
+    padding: 5%;
+}
+
+.project-modal-title-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-modal-title-wrap h2 {
+    color: #fff;
+}
+.project-modal-title-wrap p {
+    font-size: var(--font-card-date);
+    font-weight: 200;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* 태그 */
+.project-modal-tag {
+    padding-top: 3%;
+    display: flex;
+    gap: 1%;
+    flex-wrap: wrap;
+}
+
+/* 상세 설명 - 카드와 달리 줄 제한 없이 전체 표시 */
+.project-modal-desc {
+    padding: 5% 0;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    word-break: break-all;
+}
+
+/* 사용 툴 */
+.project-modal-tools {
+    padding-bottom: 5%;
+}
+.project-modal-tools .tool-title {
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* 프로젝트 링크 */
+.project-modal-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.project-modal-links li a {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    font-size: var(--font-caption);
+    transition: color 0.3s;
+}
+.project-modal-links li a i {
+    padding-left: 10px;
+}
+.project-modal-links li a:hover {
+    color: var(--color-main);
+}

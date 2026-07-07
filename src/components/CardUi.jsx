@@ -1,11 +1,23 @@
+import { useState } from "react";
+import { createPortal } from "react-dom";
+import ProjectModal from "./ProjectModal";
 import "../css/CardUi.css";
 
 function CardUi({ project }) {
     const { thumbnail, title, period, tags, description, tools, links } = project;
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
+    // 카드 안의 링크를 눌렀을 때 모달이 같이 열리지 않도록 전파 차단
+    const handleLinkClick = (e) => {
+        e.stopPropagation();
+    };
 
     return (
         <>
-            <div className="project-card">
+            <div className="project-card" onClick={openModal}>
                 {/* 썸네일 이미지 */}
                 <div className="project-img">
                     <img src={thumbnail} alt={title} />
@@ -48,7 +60,12 @@ function CardUi({ project }) {
                 <ul className="project-links">
                     {links.map((link) => (
                         <li key={link.label} className="project-link-item">
-                            <a href={link.url} target="_blank" rel="noopener noreferrer">
+                            <a
+                                href={link.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={handleLinkClick}
+                            >
                                 {link.label}
                                 <i className="fa-solid fa-arrow-right"></i>
                             </a>
@@ -60,6 +77,12 @@ function CardUi({ project }) {
                 
                 
             </div>
+
+            {isModalOpen &&
+                createPortal(
+                    <ProjectModal project={project} onClose={closeModal} />,
+                    document.body
+                )}
         </>
     )
 }

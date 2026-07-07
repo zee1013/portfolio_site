@@ -1,0 +1,35 @@
+.custom-cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    pointer-events: none;   /* 클릭/호버 이벤트가 아래 요소에 그대로 전달되도록 */
+    z-index: 999999;
+    will-change: transform; /* 브라우저에 위치 변경을 미리 알려 렌더링 최적화 */
+    border: 1.5px solid var(--color-main);
+    width: 32px;
+    height: 32px;
+    transition: width 0.15s ease, height 0.15s ease, border-width 0.25s ease;
+}
+
+/* 클릭 가능한 요소에 마우스를 올렸을 때 */
+.custom-cursor-ring.is-hovering {
+    width: 52px;
+    height: 52px;
+    border-width: 2px;
+}
+
+/* 클릭하는 순간 눌리는 듯한 피드백 */
+.custom-cursor-ring.is-clicking {
+    width: 26px;
+    height: 26px;
+    background-color: var(--color-main);
+    transition: 0.2s;
+}
+
+/* 터치 기기(모바일, 태블릿)에서는 커스텀 커서 자체를 숨김 */
+@media (pointer: coarse) {
+    .custom-cursor-ring {
+        display: none;
+    }
+}

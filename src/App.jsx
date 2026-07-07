@@ -14,6 +14,7 @@ import Hero from "./Section/Hero";
 import VisualWorks from "./Section/VisualWorks";
 import Web from "./Section/Web";
 import GoTop from "./components/GoTop";
+import CustomCursor from "./components/CustomCursor";
 
 function App(){
     useEffect(() => {
@@ -25,6 +26,7 @@ function App(){
   }, []);
     return(
         <div>
+            <CustomCursor/>
             {/* 헤더 */}
             <Header/>
             {/* 메인 화면 */}
