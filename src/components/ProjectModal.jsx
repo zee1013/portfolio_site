@@ -1,12 +1,11 @@
 import { useEffect } from "react";
+import { createPortal } from "react-dom";
 import "../css/ProjectModal.css";
 
 function ProjectModal({ project, onClose }) {
-    const { thumbnail, title, period, tags, description, detail, tools, links } = project;
-    // 모달에는 긴 상세 설명(detail)을 우선 보여주고, 아직 없는 프로젝트는 짧은 설명(description)으로 대체
+    const { thumbnail, title, period, tags, description, detail, detailImage,tools, links } = project;
     const modalDesc = detail || description;
 
-    // ESC 키로 닫기 + 모달 열려있는 동안 배경 스크롤 막기
     useEffect(() => {
         const handleKeyDown = (e) => {
             if (e.key === "Escape") onClose();
@@ -20,12 +19,11 @@ function ProjectModal({ project, onClose }) {
         };
     }, [onClose]);
 
-    // 오버레이(배경) 클릭 시 닫기
     const handleOverlayClick = () => onClose();
-    // 모달 콘텐츠 클릭은 오버레이로 전파되지 않도록 차단 (닫힘 방지)
     const handleContentClick = (e) => e.stopPropagation();
 
-    return (
+    // 모달 JSX를 변수로 분리
+    const modalContent = (
         <div className="project-modal-overlay" onClick={handleOverlayClick}>
             <div className="project-modal" onClick={handleContentClick}>
                 <button
@@ -84,10 +82,21 @@ function ProjectModal({ project, onClose }) {
                             </li>
                         ))}
                     </ul>
+
+                    {/* 프로세스 이미지가 있을 때만 렌더링 */}
+{detailImage && (
+    <div className="project-modal-detail-img">
+        <img src={detailImage} alt={`${title} 프로세스`} />
+    </div>
+)}
+
                 </div>
             </div>
         </div>
     );
+
+    // document.body에 직접 렌더링 (부모의 transform/overflow 영향을 받지 않음)
+    return createPortal(modalContent, document.body);
 }
 
 export default ProjectModal;

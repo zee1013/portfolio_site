@@ -24,6 +24,7 @@ export const visualWorks = [
     tags: ["브랜딩"],
     description:
       "빵지도는 다양한 베이커리와 디저트 정보를 한곳에서 탐색할 수 있는 지도 기반 플랫폼이다. 빵이 나오는 시간, 재고, 웨이팅 등 방문 전 필요한 정보를 제공하고, 예약 및 픽업까지 연결되는 통합 서비스이다.",
+    detailImage: getVisualImage("bread_map_process.png"),
     tools: [skillIcons.figma, skillIcons.illustrator],
     links: [{ label: "프로세스", url: "https://www.figma.com/proto/6H9U6plOBNNu38nyO1yLag/Untitled?node-id=1-5&viewport=505%2C353%2C0.15&t=JmaSEHZl9xSFVVkD-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" },{ label: "Notion", url: "https://app.notion.com/p/3817c519a23080859f1cf4b71c45e5df?source=copy_link" }],
     large: true,

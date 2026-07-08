@@ -14,8 +14,10 @@ export const projects = [
       end: "26.06.12",
     },
     tags: ["팀 프로젝트(3인)", "리디자인", "퍼블리싱", "반응형"],
+    // description : 카드 UI 썸네일에 표시되는 내용, detail 설명이 없으면 Modal창에서도 description에 적힌 텍스트가 보여짐.
     description:
       "장학금 페이지(서브 페이지) 전체 퍼블리싱을 담당하였으며, 다양한 디바이스 환경에서 일관된 사용자 경험을 제공할 수 있도록 반응형 웹 구조를 구현하였다.",
+      detail: "",
     // skills.js에 정의된 skillIcons의 id를 재사용
     tools: [skillIcons.figma, skillIcons.photoshop, skillIcons.vscode],
     links: [
@@ -35,9 +37,10 @@ export const projects = [
       end: "26.05.07",
     },
     tags: ["개인 프로젝트", "리디자인", "퍼블리싱", "반응형"],
+    // description : 카드 UI 썸네일에 표시되는 내용, detail 설명이 없으면 Modal창에서도 description에 적힌 텍스트가 보여짐.
     description:
       "텍스트 중심의 정보 나열 방식인 기존 사이트에서 대형 비주얼 배너와 전시 이미지를 활용하여 사용자가 첫 화면에서 전시 분위기를 직관적으로 느낄 수 있도록 개선했다.",
-    detail: "sdfsdsdf",
+    detail: "",
     // skills.js에 정의된 skillIcons의 id를 재사용
     tools: [skillIcons.figma, skillIcons.vscode],
     links: [
@@ -57,8 +60,10 @@ export const projects = [
       end: "26.06.15",
     },
     tags: ["랜딩페이지"],
+    // description : 카드 UI 썸네일에 표시되는 내용, detail 설명이 없으면 Modal창에서도 description에 적힌 텍스트가 보여짐.
     description:
       "본 프로젝트는 행사 정보 전달과 참여 유도를 목적으로 하며, 포스터 및 전단에 분산되어 있는 정보를 하나의 랜딩페이지로 통합하여 사용자가 보다 직관적으로 혜택을 확인할 수 있도록 기획하였다.",
+      detail: "",
     // skills.js에 정의된 skillIcons의 id를 재사용
     tools: [skillIcons.figma, skillIcons.photoshop, skillIcons.illustrator],
     links: [
