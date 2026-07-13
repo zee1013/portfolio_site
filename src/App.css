@@ -78,14 +78,6 @@
   .skill-icon-item{
     max-width: 70px;
   }
-
-  /* 포스터 & 그래픽 영역 */
-  /* .poster-header{
-    gap: 8%;
-  }
-  .poster-header .poster-title-wrap{
-    flex: 0 0 240px;
-  } */
 }
 
 @media (max-width: 768px) {
@@ -130,6 +122,9 @@
         transition: transform 0.3s ease;
     }
     /* 메뉴 열렸을 때 */
+    .header--active{
+      background-color: var(--color-main);
+    }
     .header__nav--open{
         transform: translateX(0);
     }

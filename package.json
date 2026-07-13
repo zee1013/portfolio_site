@@ -13,6 +13,7 @@
     "aos": "^2.3.4",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.1",
     "swiper": "^14.0.1"
   },
   "devDependencies": {

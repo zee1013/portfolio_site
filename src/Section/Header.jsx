@@ -28,18 +28,19 @@ function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   // 모바일 메뉴 열렸을 때 배경 스크롤 막기
-useEffect(() => {
-  if (isMenuOpen) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "";
-  }
-  // 컴포넌트 언마운트 시 원상복구
-  return () => {
-    document.body.style.overflow = "";
-  };
-}, [isMenuOpen]);
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    // 컴포넌트 언마운트 시 원상복구
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
 
   const handleNavClick = (id) => {
     setActiveId(id);
@@ -55,7 +56,11 @@ useEffect(() => {
   };
 
   return (
-    <header className={isScrolled || isMenuOpen ? "header header--active" : "header"}>
+    <header
+      className={`header ${isScrolled ? "header--active" : ""} ${
+        isMenuOpen ? "header--menu-open" : ""
+      }`.trim()}
+    >
       <div className="inner">
         {/* 768px 이하에서만 보이는 햄버거 버튼 */}
         <div

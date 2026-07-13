@@ -3,13 +3,17 @@
     top: 0;
     left: 0;
     border-radius: 50%;
-    pointer-events: none;   /* 클릭/호버 이벤트가 아래 요소에 그대로 전달되도록 */
+    pointer-events: none;
     z-index: 999999;
-    will-change: transform; /* 브라우저에 위치 변경을 미리 알려 렌더링 최적화 */
-    border: 1.5px solid var(--color-main);
+    will-change: transform;
     width: 32px;
     height: 32px;
     transition: width 0.15s ease, height 0.15s ease, border-width 0.25s ease;
+
+    /* 배경과의 차이값으로 색이 계산됨 → 블루 배경 위에서는 검정에 가깝게, 
+       어두운 배경 위에서는 블루가 거의 그대로 살아남음 */
+    mix-blend-mode: difference;
+    border: 1.5px solid var(--color-main);
 }
 
 /* 클릭 가능한 요소에 마우스를 올렸을 때 */
